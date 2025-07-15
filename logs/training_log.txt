@@ -1,0 +1,19 @@
+[CONFIG]
+image_dir: dataset/images
+depth_dir: dataset/depth
+val_split: 0.1
+batch_size: 8
+num_workers: 4
+lr: 0.0001
+weight_decay: 0.01
+mixed_precision: True
+accum_steps: 2
+grad_clip: 1.0
+warmup_steps: 1000
+T_max: 2500000
+output_dir: checkpoints
+log_dir: logs
+quick_test: True
+quick_fraction: 0.01
+trainable_params_M: 25.74
+
